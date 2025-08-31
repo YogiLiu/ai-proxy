@@ -1,0 +1,13 @@
+repos:
+- hooks:
+  - id: biome-check
+  repo: https://github.com/biomejs/pre-commit
+  rev: v2.2.2
+
+- hooks:
+  - id: commitizen
+  - id: commitizen-branch
+    stages:
+    - pre-push
+  repo: https://github.com/commitizen-tools/commitizen
+  rev: v4.8.3
