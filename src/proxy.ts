@@ -11,14 +11,14 @@ app.all(
     (c) => {
         const { domain, path } = c.req.param()
         if (c.env.AP_ALLOWLIST) {
-            const whitelist = c.env.AP_ALLOWLIST.split(',')
-            if (!whitelist.includes(domain)) {
+            const allowlist = c.env.AP_ALLOWLIST.split(',')
+            if (!allowlist.includes(domain)) {
                 return c.json(
                     {
                         type: 'about:blank',
                         status: 403,
                         title: 'invalid domain',
-                        detail: 'cannot find domain in whitelist',
+                        detail: 'cannot find domain in allowlist',
                         instance: domain,
                     },
                     403,
