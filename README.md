@@ -26,11 +26,4 @@ fetch(
 
 ## Allowlist
 
-By default, all domains are allowed to be proxied.
-
-To prevent abuse, it’s recommended to configure a domain allowlist in the environment variables.
-
-```dotenv
-# Separated by commas.
-AP_ALLOWLIST=api.openai.com
-```
+To prevent abuse, it’s recommended to configure a domain allowlist in `wrangler.jsonc`.
