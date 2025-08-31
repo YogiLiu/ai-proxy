@@ -24,7 +24,7 @@ fetch(
 )
 ```
 
-## Whitelist
+## Allowlist
 
 By default, all domains are allowed to be proxied.
 
